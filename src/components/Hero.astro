@@ -1,0 +1,79 @@
+---
+    import { basics } from '@cv'
+    import Section from './section/Section.astro'
+    import Mail from 'src/assets/Mail.astro'
+    import Phone from 'src/assets/Phone.astro'
+    import GitHub from 'src/assets/GitHub.astro'
+    import LinkedIn from 'src/assets/LinkedIn.astro'
+
+ const{ name , label , image, profiles , phone , email , location } = basics
+ const { city , region , world } =  location
+
+const SOCIAL_ICONS: Record<string , any> = {
+    GitHub,
+    LinkedIn
+}
+---
+<Section class=" flex flex-row">
+        <div class="inline-block align-top">
+            <h1 class=" text-4xl font-bold mb-1">{name}</h1>
+            <h2 class=" text2xl font-bold">{label}</h2>
+            <span class="flex flex-row items-center justify-between w-40">
+                <img src={world} alt="World" class="h-4">
+                {city},{region}
+            </span>
+            <foote class=" flex flex-row mt-1 gap-1.5 ">
+                <div class="print">
+                    {email} - {phone} 
+                </div>
+                <div class="icons">
+                    {
+                        email && (
+                        <a 
+                            href={`mailto:${email}`} 
+                            class="inline-block p-1 border rounded hover:bg-gray-100"
+                            title={`Send ${name} an email`}
+                            target="_blank"
+                        >
+                                <Mail  />
+                            </a>
+                        )
+                    }
+                    {
+                        phone && (
+                            <a 
+                            href={`tel:${phone}`} 
+                            title={`Make a call to ${name}`}
+                            class = "inline-block p-1 border rounded hover:bg-gray-100"
+                            target="_blank"
+                            >
+                                <Phone  />
+                            </a>
+                        )
+                    }
+                     {
+                        profiles.map(({network , url , username }) => {
+                            const Icon = SOCIAL_ICONS[network]
+                            return(
+                                <a 
+                                href={url}
+                                   title={`Visit the profile ${username} in ${network}`}
+                                   class = "inline-block p-1 border rounded hover:bg-gray-100"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                >
+                                    <Icon/>
+                                </a>
+                            )
+                        })
+    
+                    }
+                </div>
+            </foote>
+        </div>
+        <div class="inline-block ml-36">
+            <figure>
+                <img src={image} alt={name} class="  w-28 rounded"/>
+            </figure>
+        </div>
+</Section>

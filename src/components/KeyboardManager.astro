@@ -1,0 +1,50 @@
+
+<footer class="info text-center w-full justify-center ">
+    <p>Click <kbd>Cmd</kbd> + <kbd>K</kbd> to open the search engine</p>
+</footer>
+<ninja-keys
+   placeholder="Cherch 🔍" hideBreadcrumbs
+>
+</ninja-keys>
+
+
+<script>
+    import "ninja-keys"
+
+    const ninja = document.querySelector('ninja-keys');
+    if(ninja != null){
+        ninja.data = [
+    {
+      id: 'Print',
+      title: '🖨️ Print',
+      hotkey: 'ctrl+P',
+      section: 'Projects',
+      handler: () => {
+        window.print()
+      },
+    }
+  ];
+
+    }
+
+</script>
+
+<style>
+    .info{
+        display: inline;
+    }
+    @media print{
+        ninja-keys{
+			display: none !important;
+		}
+        .info{
+            display: none;
+        }
+    }
+    kbd{
+        background-color: #888;
+        padding-inline: 10px;
+        border-radius: 6px;
+        color:rgb(255, 255, 255);
+    }
+</style>

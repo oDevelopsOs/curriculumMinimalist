@@ -1,0 +1,43 @@
+---
+    import Section from "./section/Section.astro";
+    import { projects } from "@cv"
+---
+
+<Section title="Projects">
+    <ul class=" grid grid-cols-2 gap-3">
+        {
+            projects.map((project) => {
+                return(
+                    <li class="border rounded-lg text-start p-1 text-wrap box-border ">
+                        <article>
+                            <header>
+                                <div class="flex items-center gap-1">
+                                    <a 
+                                    class="inline-block"
+                                    href={project.url}
+                                    title={`See the project ${project.name}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >
+                                        <h3 class=" font-semibold text-lg mb-2 ">{project.name}</h3>
+                                    </a>
+                                    <img src="../../public/tap.png" class="h-4 inline -rotate-12" alt="">
+
+                                </div>
+                                    <p class="mb-1">{project.description}</p>
+                                    <p class="mb-2">{project.highlights}</p>
+                            </header>
+                            <footer class="flex flex-wrap">
+                                {
+                                    project.technologies.map((tec) => {
+                                        return <li class="inline bg-gray-100 rounded px-2 py-0.5 mx-0.5 my-0.5">{tec}</li>
+                                    })
+                                }
+                            </footer>
+                        </article>
+                    </li>
+                )
+            })
+        }
+    </ul>
+</Section>

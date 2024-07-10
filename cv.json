@@ -1,0 +1,264 @@
+{
+  "basics": {
+    "name": "Ossama Mabsoute Kamar ",
+    "label": "Full Stack Developer with over 3 years of experience",
+    "image": "./public/meCopia.webp",
+    "email": "omkdevelopers@gmail.com",
+    "phone": "+32 0467748820",
+    "url": ".",
+    "summary": "With over 3 years of experience as a Web Developer, I have worked on numerous projects, including several personal endeavors of which I am particularly proud. You can view some of my work below. Currently, I reside in Brussels, Belgium.",
+    "location": {
+      "address": "",
+      "postalCode": "1020",
+      "world":"./public/world.png",
+      "city": "Bruxelles",
+      "countryCode": "BE",
+      "region": "Belgium"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Ossama Mabsoute",
+        "url": "https://www.linkedin.com/in/ossama-mabsoute-b0a51121a/"
+      },
+      {
+        "network": "GitHub",
+        "username": "oDevelopsOs",
+        "url": "https://github.com/oDevelopsOs"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Denodo",
+      "hibrid":true,
+      "position": "Full Stack Developer",
+      "url": "https://www.denodo.com/en",
+      "startDate": "2020-09-01",
+      "endDate": "2022-02-01",
+      "summary": "As a full stack developer, I developed and maintained web applications, working on the frontend (UI/UX) and backend (servers, databases). I ensured functionality, performance and security, collaborating with multidisciplinary teams to meet business objectives.",
+      "highlights": [
+        "Company where I started"
+      ]
+    },
+    {
+      "name": "Full Stack teacher",
+      "position": "Teacher",
+      "startDate": "2023-09-01",
+      "endDate": "2024-09-01",
+      "summary": "It was an opportunity that was presented to me to help other people get into the world of web development.",
+      "highlights": [
+        "Enriching experience"
+      ]
+    }
+  ],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [
+    {
+      "institution": "Universitat Oberta de Cataluña",
+      "url": "https://www.uoc.edu/portal/en/index.html",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2014-09-01",
+      "endDate": "2018-06-30",
+      "score": "7.3",
+      "courses": [
+        "DB1101 - Basic SQL / ",
+        "CS2001 - Data Structures and Algorithms / ",
+        "CS3001 - Operating Systems / ",
+        "CS4001 - Software Design Patterns / "
+      ]
+    }
+  ],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Cfitech",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "CSS Framework", "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Backend", "JavaScript", "Server"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": [
+        "Databases", "SQL", "Data Storage", "Backend"
+      ]
+    },
+    {
+      "name": "NextJs",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "SpringBoot",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend", "JavaScript Library", "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }, {
+      "language": "Arab",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "French",
+      "fluency": "Medium"
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Me 😜",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    {
+      "name": "Planner Omk",
+      "description": "My first full stack project, an agenda/to do list. With a minimalist approach",
+      "technologies": [
+        "React",
+        "Express",
+        "MongoDB"
+      ],
+      "highlights": [
+        "I used React to create a responsive web app"
+      ],
+      "url": "https://github.com/oDevelopsOs/OMK_Planner"
+    },
+    {
+      "name": "Farm for all",
+      "isActive": false,
+      "description": "A page that encourages consumption of domestic products and brings farms back into the spotlight",
+      "technologies": [
+        "React",
+        "Express",
+        "PostgreSQL",
+        "Prisma"
+      ],
+      "highlights": [
+        "It is a project that one day I would like to make known to the world."
+      ],
+      "url": "https://adventjs.dev"
+    },
+    {
+      "name": "Self-sufficient housing",
+      "description": "A company that designs and builds homes to be self-sufficient",
+      "technologies": [
+        "NextJs"
+      ],
+      "highlights": [
+        "My first project in NextJs"
+      ],
+      "url": "https://codember.dev"
+    },
+    {
+      "name": "Muslim ecommerce",
+      "description": "An e-commerce where products for Muslims are sold.",
+      "technologies": [
+        "Angular",
+        "SpringBoot",
+        "PostgreSQL",
+        "Micro Services"
+      ],
+      "highlights": [
+        "A project that I was quite excited to do"
+      ],
+      "url": "https://codember.dev"
+    }
+  ]
+}
